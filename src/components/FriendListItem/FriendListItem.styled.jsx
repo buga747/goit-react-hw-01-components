@@ -17,15 +17,18 @@ export const FriendStatus = styled.span`
     height: 10px;    
     border-radius: 50%;
 
-    background-color: ${({isOnline}) => {
-        if (isOnline) {
+    background-color: ${getBgColor}
+   
+`
+
+function getBgColor(props) 
+    {
+        if (props.isOnline) {
             return `green`;
         } else {
             return `red`;
     }}
-        }
-   
-`
+
 
 export const Avatar = styled.img`
 display: block;
