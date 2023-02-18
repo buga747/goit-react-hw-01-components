@@ -7,6 +7,7 @@ import user from '../data/user.json';
 import data from '../data/data.json';
 import friends from '../data/friends.json';
 import React from 'react';
+import ToggleMenu from './ToggleMenu';
 
 
 export  function App() {
@@ -25,7 +26,9 @@ export  function App() {
         
     <FriendList friends={friends} />
        
-    <TransactionHistory items={transactions} />; 
+      <TransactionHistory items={transactions} />; 
+      
+      <ToggleMenu />
     </>
   );
 };
